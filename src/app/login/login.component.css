@@ -5,8 +5,7 @@
   font-family: Arial, sans-serif;
 }
 
-body,
-html {
+body,html {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -74,7 +73,7 @@ html {
 .right-section {
   background-color: #007bff;
   display: flex;
-  background-attachment: fixed;
+  background-attachment:fixed;
   justify-content: center;
   align-items: center;
 }
@@ -84,16 +83,17 @@ html {
   border-radius: 30px 0px;
   box-sizing: border-box;
   background-color: white;
-  max-width: 320px;
+  max-width: 400px;
   float: right;
-  padding: 20px 40px;
+  padding: 30px 30px;
+  /* padding: 20px 40px; */
   margin-left: 10px;
   text-align: center;
 }
 
-.login-box h2 {
+.login-box h1 {
   /* margin-bottom: 20px; */
-  font-size: 20px;
+  font-size: 30px;
   float: left;
   color: #000;
 }
@@ -104,15 +104,29 @@ html {
 }
 
 
-/* input[type="password"],input[type="text"] {
-  padding-right: 30px;
-} */
+input[type="password"],input[type="text"] {
+  padding-right: 30px;  
+  position: relative;
 
-.toggle-eye {
+  
+}
+
+.input-box span {
+  /* position: absolute; */
+  transform: translateY(-200%);
+  font-size: 18px; 
+  color: #000; 
+  float: right;
+  margin: 10px;
+  padding-left: 5px;
+}
+
+.fas-eye {
   margin-left: -25px;
   margin-top: 2px;
   cursor: pointer;
-  float: right;
+  padding-right: 5px;
+  
 }
 
 .input-box label {
@@ -170,7 +184,7 @@ p {
   font-size: 12px;
   float: left;
   margin-bottom: 20px;
-  padding: 10px;
+  /* padding: 10px; */
   color: #555;
 }
 

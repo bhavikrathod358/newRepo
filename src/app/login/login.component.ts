@@ -14,17 +14,18 @@ password: any;
   // loginForm: FormGroup;
   loginForm: any;
   passwordFieldType:string='password';
-  
+
+
 
   togglePasswordVisibility() {
     this.passwordFieldType=this.passwordFieldType==='password' ? 'text':'password';
   }
 
   constructor(private fb: FormBuilder) {
-    // this.loginForm = this.fb.group({
-    //   username: ['', Validators.required],
-    //   password: ['', Validators.required],
-    // });
+    this.loginForm = this.fb.group({
+      username: ['', Validators.required],
+      password: ['', Validators.required],
+    });
 
      
   }
