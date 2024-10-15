@@ -1,6 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
+import { Router } from '@angular/router'; 
+import { SignInService } from '../sign-in.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -9,34 +11,44 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class LoginComponent {
 
 // passwordFieldType: any;
-password: any;
+// password: any;
 // togglePasswordVisibility: any;
   // loginForm: FormGroup;
   loginForm: any;
   passwordFieldType:string='password';
-
-
+// errorMessage: any;
+errorMessage: string = '';
+loginData: any; 
+  router: any;
+// onSubmit: any;
+// onsubmit: any;
+  
 
   togglePasswordVisibility() {
     this.passwordFieldType=this.passwordFieldType==='password' ? 'text':'password';
   }
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder, private http: HttpClient,private login: SignInService) {
     this.loginForm = this.fb.group({
-      username: ['', Validators.required],
-      password: ['', Validators.required],
+      username: ['chirag.uat', Validators.required],
+      password: ['Nov@2024', Validators.required]
     });
-
-     
   }
 
-
-  onSubmit() {
+  onsubmit():void {
     if (this.loginForm.valid) {
-      console.log(this.loginForm.value);
-    }
+       this.login.Signin(this.loginForm.value).subscribe((response: any) => {
+        
+          console.log('Login successful', response);
+          this.router.navigate(['/dashboard']); 
+        },
+        (error: any) => {
+          console.error('Login failed', error);
+          this.errorMessage = 'Invalid username or password';
+        }
+      )    
+   }
   }
-  
 }
 
 

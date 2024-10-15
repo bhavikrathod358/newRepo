@@ -107,8 +107,6 @@ body,html {
 input[type="password"],input[type="text"] {
   padding-right: 30px;  
   position: relative;
-
-  
 }
 
 .input-box span {
@@ -143,6 +141,10 @@ input[type="password"],input[type="text"] {
   border: 1px solid #ddd;
   border-radius: 5px;
   outline: none;
+}
+.error-message {
+  color: red;
+  margin-top: 10px;
 }
 
 .input-box input:focus {
