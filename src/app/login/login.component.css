@@ -15,7 +15,7 @@ body,html {
 
 .container {
   width: 1550px;
-  position: fixed;
+  position: relative;
   height: 100vh;
   display: flex;
   border: 1px solid #ccc;
@@ -27,6 +27,7 @@ body,html {
 .right-section {
   width: 100%;
   padding: 40px;
+ 
 }
 
 .left-section {
@@ -64,6 +65,7 @@ body,html {
 
 .logo img {
   width: 200px;
+  height: auto;
   justify-content: center;
   display: flex;
   margin-bottom: 10px;
@@ -173,7 +175,7 @@ input[type="password"],input[type="text"] {
   font-size: 14px;
   cursor: pointer;
   float: left;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   margin-top: 10px;
   transition: background-color 0.3s;
 }
@@ -203,3 +205,4 @@ a {
 p a:hover {
   text-decoration: underline;
 }
+

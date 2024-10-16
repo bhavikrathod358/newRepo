@@ -19,7 +19,7 @@ export class LoginComponent {
 // errorMessage: any;
 errorMessage: string = '';
 loginData: any; 
-  router: any;
+  // router: any;
 // onSubmit: any;
 // onsubmit: any;
   
@@ -28,10 +28,10 @@ loginData: any;
     this.passwordFieldType=this.passwordFieldType==='password' ? 'text':'password';
   }
 
-  constructor(private fb: FormBuilder, private http: HttpClient,private login: SignInService) {
+  constructor(private fb: FormBuilder, private http: HttpClient,private login: SignInService,private router:Router) {
     this.loginForm = this.fb.group({
-      username: ['chirag.uat', Validators.required],
-      password: ['Nov@2024', Validators.required]
+      username: ['', Validators.required],
+      password: ['', Validators.required]
     });
   }
 
@@ -41,7 +41,7 @@ loginData: any;
         
           console.log('Login successful', response);
           this.router.navigate(['/dashboard']); 
-        },
+        },  
         (error: any) => {
           console.error('Login failed', error);
           this.errorMessage = 'Invalid username or password';
