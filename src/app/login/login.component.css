@@ -221,6 +221,15 @@ p a:hover {
     height: 100vh;
     overflow: scroll;
    }
+
+   .left-section h1 {
+    font-size: 30px;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: center;
+    color: #004590;
+    font-weight: bold;
+  }
    
    .logo, .description {
      width: 100%;
@@ -234,6 +243,29 @@ p a:hover {
      margin-right: 0px;
      margin-top: 10px;
    }
+
+   .left-section p {
+    /* margin-bottom: 300px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    color: #004590;
+    font-family: sans-serif;
+    font: bold;
+  }
+   
+  .left-section address {
+    font-size: 9px;
+    /* color: #555; */
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif !important;
+    font-style: normal;
+    /* letter-spacing: 1px; */
+  }
 
    .login-box{
     width: 100%;
@@ -255,10 +287,18 @@ p a:hover {
     border-radius: 5px;
     outline: none;
     font-size: 14px;
-
    }
    
-   h1,h2,h3{
-    font-size: -1.5rem;
+   h1{
+    font-size: -1.5rem;  
    }
+
+   .options a {
+    font-size: 10px;
+    color: #555;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+  }
+  
 }
