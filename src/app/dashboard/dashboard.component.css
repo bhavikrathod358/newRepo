@@ -1,4 +1,170 @@
-.below-fixed{
+/* .header-toolbar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 0 16px;
+    min-height: 80px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #ffffff;
+  }
+  
+  .logo img {
+    width: 100px;
+    display: flex;
+    padding: 0px 30px;   
+}
+ 
+.call-img{
+  width:100px;
+  margin-top: -8px;
+}
+
+.count-number{
+  font-size:25px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+ .section{
+    display: block;
+ }
+ 
+ .count-container{
+    min-height: 200px;
+    height: 55px;
+    position: relative;
+ }
+
+ .count-container .bandwith{
+    position: absolute  ;
+    top: -8px;
+    width: 100%;
+    display: grid;
+    margin:0px 100px;
+    padding: 0px 70px;
+    font-size: 0.7rem;
+    align-items: center;
+    justify-content: center;
+    color: lightgreen;
+ } */
+
+ /* .Connection-text {
+    font-size: 12px;
+    text-align: center;
+    font-weight: 400;
+ 
+ }
+ 
+ .refresh-icon{
+    float: right;
+    margin-top: -30px;
+    margin-left: 294px;
+    font-size: 20px;
+    color: #94a3b8;
+    cursor: pointer;    
+ }
+
+ .counts{
+    height: auto;
+    width: 81%;
+    display: grid;
+    font-size: medium;
+    padding: 4px 16px;
+    border-radius: 5px;
+    margin:140px;
+    padding-right: 20px;
+    grid-template-columns:  repeat(3,110px);
+    box-shadow: 0 0 20px;
+    color: lightgreen;
+ }
+ 
+ .count:nth-child(1){
+    padding-right: 12px;
+ }
+
+ .counts .count{
+    font-size: 0.7rem;
+    height: 100%;
+    line-height: 20px;
+ }
+
+ .name-of-count {
+    display: flex;
+    font-size: 10px;
+    line-height: 20px;
+    height: 16px;
+    font-weight: 500;
+ }
+ */
+ /* .count-container{
+    font-size: 0.7rem;
+    border-radius: 5px;
+    margin: 210px;
+    box-shadow: 0 0 20px;
+    color: lightgreen;
+    padding: 0px 20px;
+    width: 350px;
+  } */
+/*    
+  .status-count{
+    margin-left: 10px;
+    font-size: 1.5rem;
+  }
+   
+ 
+  .status-panel {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    background: #ffffff;
+    border-radius: 8px;
+    width: 351px;
+    margin:300px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px;
+    font-size: 1.0rem;
+    color: lightgreen;
+
+  } 
+  
+  .status-panel div {
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+  }
+    */
+/* 
+  .user-profile {
+    display: flex;
+    align-items: center;
+    color: black;
+    border-radius: 5px;
+  }
+   */
+  /* .profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+   */
+  /* .spacer {
+    flex: 1 1 auto;
+  }
+  @media (max-width: 600px) { */
+    /* .status-panel {
+      font-size: 0.8rem;
+    }
+   */
+    /* .user-profile span { */
+    /*  display: none;  Hide the username on smaller screens */
+     /* }  */
+  /* }  */
+  /* @media only screen and (max-width: 1872px) {
+    .count-container {
+        max-width: 500px;
+    }
+} */
+/* .below-fixed{
     width: 100%;
     height: auto;
     display: flex;
@@ -18,4 +184,4 @@
     flex: 0 1 auto;
 }
 
-
+ */ 

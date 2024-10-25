@@ -10,16 +10,22 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
+import { HeaderComponent } from './header/header.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    HeaderComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -31,6 +37,7 @@ import { MatIconModule } from '@angular/material/icon';
     MatToolbarModule,
     MatCardModule,
     MatButtonModule,
+    MatMenuModule,
     MatGridListModule,
     MatIconModule,
   ],
