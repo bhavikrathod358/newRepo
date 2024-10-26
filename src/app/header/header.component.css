@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: #ffffff;
-  padding: 8px 10px;
+  padding: 4px 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -15,148 +15,137 @@
 .logo-icon {
   width: 100px;
   height: 70px;
-  padding:0px 40px;
+  padding: 0px 40px;
   margin-right: 8px;
 }
 
-.col-6{
-  width:400px;
+.col-6 {
+  width: 400px;
   border-radius: 8px;
-  color: lightgreen;
-  box-shadow: 0 0 20px;
+  color: rgb(0, 178, 255);
+  box-shadow: 0 0 8px;
   background-color: #ffffff;
 }
 
-.connection-text{
+.connection-text {
   display: flex;
   padding: 10px 10px;
 }
 
-.description{
+.description {
   text-align: center;
   font-size: 14px;
+  height: 7px;
 }
 
-.mat-icon{
+.mat-icon {
   float: right;
   color: #cdcdcd;
   cursor: pointer;
 }
 
-.name-of-count{
+.name-of-count {
   padding: 2px 18px;
   font-size: 10px;
   height: 16px;
   font-weight: 500;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
-.img{
+.img {
   align-items: center;
   justify-content: space-evenly;
   padding-left: 20px;
 }
 
-.voice-call{
+.voice-call {
   font-size: 16px;
   font-weight: 500;
- padding-left: 10px;
+  padding-left: 10px;
 }
 
-.pipe{
+.pipe {
   color: #e6e6e6;
 }
 
-.pr5{
+.pr5 {
   padding-right: 5px;
 }
 
-.pl5{
+.pl5 {
   padding-left: 5px;
 }
 
-.img-2{
+.img-2 {
   display: flex;
   position: relative;
 }
 
-.pl10{
-  padding-left: 10px;
-}
-
-.numbers.voice-call{
-  font-size: 16px;
-  font-weight: 500;
- padding-left: 10px;
-}
-
-.name-of-count-1{
-  padding: 2px 12px;
-  font-size: 0.7rem;
-  height: 61px;
-  font-weight: 500;
-  letter-spacing: .5px;
-}
-
-.number{
+.number {
   display: flex;
   font-size: 18px;
   font-weight: 500;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
-.container{
+.numbers.voice-call {
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.name-of-count-1 {
+  padding: 2px 12px;
+  font-size: 0.7rem;
+  height: 40px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.name-of-count-2 {
+  padding: 2px 55px;
+  font-size: 10px;
+  height: 24px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.container {
   display: flex;
-  align-items: center;
+  cursor: pointer;
+  grid-template-columns: repeat(3, 110px);
+  align-items: flex-end;
+  margin-bottom: 5px;
   width: 28%;
-  
   height: 50px;
 }
 
-.status-count{
+.status-count {
   font-size: 25px;
   font-style: bold;
   padding: 0px 0px;
 }
 
-.count{
+.status-count-2 {
+  font-size: 25px;
+  font-style: bold;
+  font-weight: 500;
+  padding: 0px 54px;
+}
+
+.count {
   display: flex;
-  height: 61px;
+  height: 43px;
   padding: 0px 55px;
   font-weight: 500;
   font-size: 0.7rem;
 }
 
-
-
-
-/* .status-card {
-  background-color: #ffffff;
-  padding: 10px 15px;
-  border-radius: 8px;
-  color: lightgreen;
-  box-shadow: 0 0 20px;
-  min-width: 200px;
-}
-
-.status-header {
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-  color: #3bcf7e;
-  font-size: 12px;
-}
-
-.counts{
-  display:flex;
-  padding: 15px 16px;
-}
- */
- 
 .user-info {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding: 0px 78px;
 }
 
 .user-avatar {
