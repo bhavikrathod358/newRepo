@@ -15,6 +15,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { HeaderComponent } from './header/header.component';
+import { ProfileDropdownComponent } from './profile-dropdown/profile-dropdown.component';
+import { ProfileHeaderComponent } from './profile-header/profile-header.component';
+import { MessageComponent } from './message/message.component';
+import { ApplicationComponent } from './application/application.component';
+import { VoicecallComponent } from './voicecall/voicecall.component';
+import { HomeHealthComponent } from './home-health/home-health.component';
 
 
 
@@ -26,6 +32,12 @@ import { HeaderComponent } from './header/header.component';
     LoginComponent,
     DashboardComponent,
     HeaderComponent,
+    ProfileDropdownComponent,
+    ProfileHeaderComponent,
+    MessageComponent,
+    ApplicationComponent,
+    VoicecallComponent,
+    HomeHealthComponent,
    
   ],
   imports: [

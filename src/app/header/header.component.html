@@ -1,13 +1,20 @@
 <div class="header-container">
   <!-- Logo Section -->
   <div class="logo-section">
-    <img src="assets/logo_latest.png" alt="Logo" class="logo-icon" width="100%" height="70px">
+    <img
+      src="assets/logo_latest.png"
+      alt="Logo"
+      class="logo-icon"
+      width="100%"
+      height="70px"
+    />
   </div>
 
   <!-- Connection Status Card -->
-  <div class="col-6 ">
+  <div class="col-6">
     <div class="connection-txt">
-      <div class="description">Excellent Connection
+      <div class="description">
+        Excellent Connection
         <mat-icon>refresh</mat-icon>
       </div>
 
@@ -16,9 +23,13 @@
           <div class="name-of-count">ONLINE</div>
           <span class="img">
             <span>
-              <img src="assets/incoming_call.png" width="15px" height="15px" alt="incoming_call image"></span>
-            <span class="numbers voice-call">
-              <strong>0</strong></span>
+              <img
+                src="assets/incoming_call.png"
+                width="15px"
+                height="15px"
+                alt="incoming_call image"
+            /></span>
+            <span class="numbers voice-call"> <strong>0</strong></span>
             <span class="pipe pl5 pr5">|</span>
           </span>
         </div>
@@ -26,46 +37,93 @@
         <div class="img-2">
           <span>
             <span>
-              <img src="assets/outgoing_call.png" width="15px" height="15px" alt="outgoing_call image"></span>
-            <span class="pl10 numbers voice-call">
-            </span>
+              <img
+                src="assets/outgoing_call.png"
+                width="15px"
+                height="15px"
+                alt="outgoing_call image"
+            /></span>
+            <span class="pl10 numbers voice-call"> </span>
           </span>
         </div>
-        <span class="number">
-          <strong>4</strong></span>
+        <span class="number"> <strong>4</strong></span>
 
         <div>
-          <div class="name-of-count-1">VOICEMAILS
+          <div class="name-of-count-1">
+            VOICEMAILS
             <span class="status-count">184</span>
           </div>
-
         </div>
         <div>
           <div class="name-of-count-2">MISSEDCALLS</div>
           <span class="status-count-2">1</span>
         </div>
-
       </div>
     </div>
   </div>
 
-
-  <mat-icon>admin_panel_settings</mat-icon>
-  <mat-icon>event</mat-icon>
-  <mat-icon>tty</mat-icon>
-  <mat-icon>phone_forwarded</mat-icon>
-  <mat-icon>person_add</mat-icon>
-  <mat-icon>notifications</mat-icon>
-  <mat-icon>add_alert</mat-icon>
-
+  <mat-icon class="admin_panel">admin_panel_settings</mat-icon>
+  <mat-icon class="event">event</mat-icon>
+  <mat-icon class="tty">tty</mat-icon>
+  <mat-icon class="phone_forwarded">phone_forwarded</mat-icon>
+  <mat-icon class="person_add">person_add</mat-icon>
+  <mat-icon class="notifications">notifications</mat-icon>
+  <mat-icon class="add_alert">add_alert</mat-icon>
 
   <!-- User Profile Section -->
   <div class="user-info">
-    <img src="assets/user-profile.jpg" alt="User" class="user-avatar">
+    <img src="assets/user.png" alt="User" class="user" />
     <div class="user-details">
       <div class="user-name">John Morrison</div>
       <div class="user-id">(john_morrison)</div>
+      <div class="profile-menu">
+        <!-- Profile Dropdown Menu -->
+        <mat-menu #profileMenu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>person</mat-icon>
+            <span>My Profile</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>settings</mat-icon>
+            <span>Settings</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>logout</mat-icon>
+            <span (click)="logout()">Logout</span>
+          </button>
+        </mat-menu>
+      </div>
     </div>
-    <span class="dropdown-icon">⬇️</span>
+    <mat-icon class="keyboard_arrow_down" [matMenuTriggerFor]="profileMenu"
+      >keyboard_arrow_down</mat-icon
+    >
   </div>
-  <!-- </div> -->
+</div>
+
+<div class="container-fluid">
+  <div class="header-icons">
+    <mat-icon class="home">home</mat-icon>
+    <button mat-button class="dashboard" routerLink="/home-health">Dashboard</button>
+  </div>
+
+  <!-- In your header or sidebar component -->
+<div class="nav-item-2">
+  <mat-icon>chat</mat-icon>
+  <span>Messaging</span>
+</div>
+
+<!-- In your navigation or toolbar component -->
+<div class="nav-item-2">
+  <mat-icon>settings_applications</mat-icon>
+  <span>Applications</span>
+</div>
+
+<!-- In your header or sidebar component -->
+ <div class="nav-item-3">
+  <mat-icon>voicemail</mat-icon>
+  <span>Voice Call</span>
+</div>
+
+</div>
+
+<!-- </div> -->
