@@ -12,11 +12,10 @@
   align-items: center;
 }
 
-.logo-icon {
+.logo-icon { 
   width: 100px;
   height: 70px;
   padding: 0px 40px;
-  margin-right: 8px;
 }
 
 .col-6 {
@@ -40,7 +39,7 @@
 
 .mat-icon {
   float: right;
-  color: rgb(0, 178, 255);;
+  color: rgb(0, 178, 255);
   cursor: pointer;
 }
 
@@ -141,31 +140,31 @@
   font-size: 0.7rem;
 }
 
-.admin_panel{
-  color:  rgb(0, 178, 255);;
-}
-
-.event{
+.admin_panel {
   color: rgb(0, 178, 255);
 }
 
-.tty{
+.event {
   color: rgb(0, 178, 255);
 }
 
-.phone_forwarded{
+.tty {
   color: rgb(0, 178, 255);
 }
 
-.person_add{
+.phone_forwarded {
   color: rgb(0, 178, 255);
 }
 
-.notifications{
+.person_add {
   color: rgb(0, 178, 255);
 }
 
-.add_alert{
+.notifications {
+  color: rgb(0, 178, 255);
+}
+
+.add_alert {
   color: rgb(0, 178, 255);
 }
 
@@ -179,7 +178,7 @@
   padding: 8px 15px;
 }
 
-.user{
+.user {
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -208,121 +207,116 @@ mat-icon {
   color: #555;
 }
 
-
 .profile-menu {
   display: flex;
   align-items: center;
-    }
+}
 
-    .profile-info {
-      display: flex;
-      flex-direction: column;
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 8px;
+
+  .profile-name {
+    font-weight: 500;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .profile-id {
+    font-size: 12px;
+    color: #777;
+  }
+}
+
+mat-menu {
+  mat-menu-item {
+    display: flex;
+    align-items: center;
+
+    .mat-icon {
       margin-right: 8px;
-
-      .profile-name {
-        font-weight: 500;
-        font-size: 16px;
-        color: #333;
-      }
-
-      .profile-id {
-        font-size: 12px;
-        color: #777;
-      }
+      color: #555;
     }
 
-  
-  mat-menu {
-    mat-menu-item {
-      display: flex;
-      align-items: center;
-
-      .mat-icon {
-        margin-right: 8px;
-        color: #555;
-      }
-
-      .shortcut {
-        font-size: 12px;
-        color: #aaa;
-        margin-left: auto;
-      }
+    .shortcut {
+      font-size: 12px;
+      color: #aaa;
+      margin-left: auto;
     }
   }
+}
 
-   .container-fluid{
-    width: 100%;
-    position: sticky;
-    margin-top: 2px;
-    display: flex;
-    align-items: center;
-    background-color: white;
-  }
-  
-  .header-icons {
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    font-size: 16px;
-    color: #555;
-    background-color: #e6e6e6;
-  }
-  
-  .header-icons mat-icon {
-    margin-right: 8px;
-    margin-left: 36px;
-    cursor: pointer;
-    font-size: 24px;
-    color: #555; 
-  }
-  
-  .nav-item {
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .nav-item mat-icon {
-    margin-right: 8px;
-    margin-left: 36px;
-    cursor: pointer;
-    font-size: 24px;
-    color: #555; 
-  }
-  
-  .nav-item-2 {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .nav-item-2 mat-icon {
-    margin-right: 8px;
-    margin-left: 36px;
-    cursor: pointer;
-    font-size: 24px;
-    color: #555; 
-  }
-  
-  .nav-item-3 {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    font-size: 16px;
-    color: #555;
-  }
-  
-  .nav-item-3 mat-icon {
-    margin-right: 8px;
-    margin-left: 36px;
-    cursor: pointer;
-    font-size: 24px;
-    color: #555; 
-  }
-  
-  
-  
+.container-fluid {
+  width: 100%;
+  position: sticky;
+  margin-top: 2px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.header-icons {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  font-size: 16px;
+  color: #555;
+  background-color: #e6e6e6;
+}
+
+.header-icons mat-icon {
+  margin-right: 8px;
+  margin-left: 36px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #555;
+}
+
+.nav-item {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  font-size: 16px;
+  color: #555;
+}
+
+.nav-item mat-icon {
+  margin-right: 8px;
+  margin-left: 36px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #555;
+}
+
+.nav-item-2 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+}
+
+.nav-item-2 mat-icon {
+  margin-right: 8px;
+  margin-left: 36px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #555;
+}
+
+.nav-item-3 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+}
+
+.nav-item-3 mat-icon {
+  margin-right: 8px;
+  margin-left: 36px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #555;
+}
