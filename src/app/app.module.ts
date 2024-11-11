@@ -21,7 +21,7 @@ import { MessageComponent } from './message/message.component';
 import { ApplicationComponent } from './application/application.component';
 import { VoicecallComponent } from './voicecall/voicecall.component';
 import { HomeHealthComponent } from './home-health/home-health.component';
-
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 
 
@@ -53,6 +53,7 @@ import { HomeHealthComponent } from './home-health/home-health.component';
     MatMenuModule,
     MatGridListModule,
     MatIconModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

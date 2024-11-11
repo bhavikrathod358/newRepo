@@ -1,3 +1,4 @@
+<header class="sticky-header">
 <div class="header-container">
   <!-- Logo Section -->
   <div class="logo-section">
@@ -27,7 +28,8 @@
                 src="assets/incoming_call.png"
                 width="15px"
                 height="15px"
-                alt="incoming_call image"
+                alt="incoming_call image" matTooltip="Incoming Call"
+                matTooltipPosition="left"
             /></span>
             <span class="numbers voice-call"> <strong>0</strong></span>
             <span class="pipe pl5 pr5">|</span>
@@ -41,7 +43,8 @@
                 src="assets/outgoing_call.png"
                 width="15px"
                 height="15px"
-                alt="outgoing_call image"
+                alt="outgoing_call image" matTooltip="Outgoing Call"
+                matTooltipPosition="right"
             /></span>
             <span class="pl10 numbers voice-call"> </span>
           </span>
@@ -119,9 +122,9 @@
 </div>
 
 <!-- In your header or sidebar component -->
- <div class="nav-item-3">
+<div class="nav-item-3">
   <mat-icon>voicemail</mat-icon>
   <span>Voice Call</span>
 </div>
-
 </div>
+</header>
