@@ -29,8 +29,8 @@
 .col-6 {
   width: 400px;
   border-radius: 8px;
-  /* color: rgb(0, 178, 255); */
-  color: rgb(242, 65, 108);
+  color: rgb(0, 178, 255);
+  /* color: rgb(242, 65, 108); */
   box-shadow: 0 0 8px;
   background-color: #ffffff;
 }
