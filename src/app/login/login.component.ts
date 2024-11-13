@@ -19,6 +19,7 @@ export class LoginComponent {
 // errorMessage: any;
 errorMessage: string = '';
 loginData: any; 
+  authService: any;
   // router: any;
 // onSubmit: any;
 // onsubmit: any;
@@ -34,11 +35,16 @@ loginData: any;
       password: ['', Validators.required]
     });
   }
+  
 
   onsubmit():void {
     if (this.loginForm.valid) {
        this.login.Signin(this.loginForm.value).subscribe((response: any) => {
-        
+        const token = response.data.token;  // Adjust this based on the actual response structure
+
+        // Store the token in local storage
+        localStorage.setItem('token', token);
+          
           console.log('Login successful', response);
           this.router.navigate(['/dashboard']); 
         },  
