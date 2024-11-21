@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/internal/Observable';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class SignInService {
   loginForm: any;
@@ -12,36 +12,30 @@ export class SignInService {
   SignInService: any;
 
   // Signin: any;
-   
-  
-  // Signin():void{
-  //   const loginData= this.loginForm.value;
-    // const apiUrl='https://api-uat.healthwealthsafe.link/api/web/staffLogin';
 
-  //      this.http.post(apiUrl, loginData).subscribe(
-  //       (response: any) => {
-  //         console.log('Login successful', response);
-  //         // Handle success (e.g., store token, navigate)
-  //         this.router.navigate(['/dashboard']);
-  //      },
-
-  //      (error) => {
-  //       console.error('Login failed', error);
-  //       this.errorMessage = 'Invalid username or password';
-  //     }
-      
-  //   );
-  // }
-
-      private apiUrl='https://api-uat.healthwealthsafe.link/api/web/staffLogin';
+  private apiUrl = 'https://api-uat.healthwealthsafe.link/api/web/staffLogin';
+  private tokenKey = 'authToken'; // Key to store the token in localStorage/sessionStorage
+  authenticated: any;
+  // isAuthenticated: any;
 
   Signin(loginData: any): Observable<any> {
     console.log(loginData);
-    return this.http.post<any>(this.apiUrl, loginData); 
+    return this.http.post<any>(this.apiUrl, loginData);
   }
 
-  constructor(private http:HttpClient) { 
-
-  
+  // Check if user is authenticated
+  isAuthenticated(): boolean {
+    const token = localStorage.getItem(this.tokenKey); // Retrieve token from storage
+    return !!token; // Return true if token exists, false otherwise
   }
+
+  // Set authentication status
+  setAuthenticated(status: boolean): void {
+    this.authenticated = status;
+  }
+  // Log out user
+  logout(): void {
+    localStorage.removeItem(this.tokenKey); // Remove token on logout
+  }
+  constructor(private http: HttpClient) {}
 }

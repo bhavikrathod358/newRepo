@@ -13,9 +13,11 @@ export class HeaderComponent {
 
   constructor(private logoutService: LogoutService) {}
 
-
+  
   // Define the logout method
   logout() {
     this.logoutService.cleanSession();
+    document.cookie = 'token=; expires=Mon, 18 Nov 2024 00:00:00 UTC; path=/;';
+    sessionStorage.clear();
   }
 }

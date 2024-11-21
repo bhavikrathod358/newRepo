@@ -3,13 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeHealthComponent } from './home-health/home-health.component';
+import { authGuard } from './auth.guard';
 
 const routes: Routes = [
 	{ path: 'login', component: LoginComponent },
 	{ path: '', redirectTo: '/login', pathMatch: 'full' },
 	{
 		path: 'dashboard',
-		component: DashboardComponent,
+		component: DashboardComponent,canActivate: [authGuard]
 	},
 
 	// { path:'', component:HomeHealthComponent},
@@ -19,9 +20,9 @@ const routes: Routes = [
 	// 	component: DashboardComponent
 	// }
 	{ path: '', redirectTo: '/home-health', pathMatch: 'full' }, // Default route
-    { path: 'home-health', component: HomeHealthComponent },
-    { path: 'dashboard', component: DashboardComponent }
-
+    { path: 'home-health', component: HomeHealthComponent,  },
+    // { path: 'dashboard', component: DashboardComponent},
+      
 ];
 
 @NgModule({
