@@ -13,8 +13,8 @@ export class LoginComponent {
   // passwordFieldType: any;
   // password: any;
   // togglePasswordVisibility: any;
-  // loginForm: FormGroup;
-  loginForm: any;
+  loginForm: FormGroup;
+  // loginForm: any;
   passwordFieldType: string = 'password';
   // errorMessage: any;
   errorMessage: string = '';
@@ -68,7 +68,8 @@ export class LoginComponent {
           this.errorMessage = 'Invalid username or password';
         }
       );
-    } else {
+    }
+     else {
       // Set error message if form is invalid
       this.errorMessage = 'Please fill out the form correctly.';
     }
